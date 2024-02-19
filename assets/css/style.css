@@ -81,6 +81,9 @@ h6 {
   background: #040b14;
   overflow-y: auto;
 }
+.hidden {
+  display: none;
+}
 
 #header .profile img {
   margin: 15px auto;
@@ -168,7 +171,7 @@ h6 {
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .nav-menu a i,

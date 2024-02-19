@@ -41,7 +41,7 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
-
+      
       <div class="profile">
         <img src="assets/img/Shreya_black.png" alt="" class="img-fluid rounded-circle" style="width: 150px; height: 172px;">
         <h1 class="text-light"><a href="index.html">Shreya Banik</a></h1>
@@ -57,9 +57,11 @@
       <nav id="navbar" class="nav-menu navbar" >
         <ul>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user" ></i> <span>About</span></a></li>
-          <li><div style="display: flex; "><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+          <li><a href="#resume" class="nav-link scrollto"><i class="fa-solid fa-school" ></i> <span>Education</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="fa-brands fa-python" ></i> <span>Projects</span></a></li>
+          <li><div style="display: flex; ">
+            <a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
             <a class="nav-link scrollto" style="float:right;" href="assets/resume/Resume.pdf" target="_blank" download><i class="bi bi-download"></i> </a>
-            
           </div></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -78,7 +80,7 @@
       <div class="col-lg-6" style="text-align: right;">
         <h6 style="color: white; font-family:'Times New Roman', Times, serif">HI THERE, &nbsp I'M</h6>
         <h2 style="color: white; font-family:'Times New Roman', Times, serif">SHREYA &nbsp BANIK </h2>
-        <h3><p><span class="typed" data-typed-items=" Data Scientist, Developer, Freelancer, An Artist" style="font-family:'Times New Roman', Times, serif"></span></p></h3>
+        <h3><p><span class="typed" data-typed-items=" Data Scientist, Developer, Engineer, Freelancer, An Artist" style="font-family:'Times New Roman', Times, serif"></span></p></h3>
       </div>
     </div>
   </section>
@@ -324,7 +326,6 @@
     </div>
 
     <!--======Project section======-->
-    <!----------Project 1------------>
     <section id="projects" class="projects">
       <div class="container">
         
@@ -334,7 +335,31 @@
             </div>
       </div>
 
+      <!----------Project 1------------>
+      <div class="container">
 
+        <div class="row">
+          <h5><b>Snake-A-Bite Game Implementation Using Reinforcement Learning
+          </b></h5>
+
+          <div class="col-lg-6" id="chat_app">
+            <img src="assets/img/Snake_game.png" class="img-fluid" alt="" style="float: left;">
+            <a href="https://github.com/kshreya2k/Uber_Fare_Predictor" target="_blank" class="d-block text-center">GitHub Repository</a>
+          </div>
+
+          <div class="col-lg-8">
+            <p class="fst-italic">
+              <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+              Developed an AI agent capable of autonomously playing the Snake game by implementing reinforcement learning algorithms.<br>
+              <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+              Employed Pygame library for the game environment and Pytorch for implementing a suitable RL algorithm to train the agent for optimal decision making.<br>
+              <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+              Adjusted QTrainer for the neural network weights to improve Q-value predictions and plotted Visualization to track the improvement in training performance by checking on average score by time.
+           </p>
+          </div>
+          
+        </div>
+      </div>
         <!-------Project 2------->
         <div class="container">
           <div class="row">
@@ -344,8 +369,6 @@
               <p class="fst-italic">
                   <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
                   Developed and implemented a predictive model for Uber ride fares, leveraging diverse input features using Machine Learning.                  <br>
-                  <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i> 
-                  Addressed missing values, performed data transformations, and conducted feature selection to enhance dataset quality for modelling.                  <br>
                   <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
                   Identified and managed outliers in critical features, making informed decisions on their removal or application of appropriate transformations.              <br>
                   <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
@@ -361,17 +384,35 @@
 
           </div>
         </div>
+
+        <div class="container">
+          <div class="row">
+            <h5><b>Predict Adult Income using Microsoft Azure (Coursera Certified)
+            </b></h5>
+
+            <div class="col-lg-4" id="chat_app">
+              <img src="assets/img/AdultIncomeAzureProject.png" class="img-fluid" alt="" style="float: left;">
+              <a href="https://github.com/kshreya2k/Uber_Fare_Predictor" target="_blank" class="d-block text-center">GitHub Repository</a>
+            </div>
+
+            <div class="col-lg-8">
+              <p class="fst-italic">
+                <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+                Led end to end development of an adult income prediction system, utilizing Microsoft Azure and Machine Learning concepts, achieving 94.4 %. <br>
+                <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+                Performed data cleaning to handle null values, feature se lection, and class imbalance via up sampling, training two models for comparison. <br>
+                <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+                Achieved AUC of 0.986 in boosted decision tree model after hyperparameter tuning, published as a web service for inference.
+              </p>
+            </div>
+          </div>
+        </div>
+
         <!-------Project 3------->
         <div class="container">
           <div class="row">
             <h5><b>Statistical Analysis on Accidental Drug Deaths in Connecticut using Python
             </b></h5>
-
-            <div class="col-lg-3" id="chat_app">
-              <img src="assets/img/CTaccidental_analysis.png" class="img-fluid" alt="" style="float: right;">
-              <a href="https://github.com/kshreya2k/Accidental_Drug_Related_Deaths_CT_Data-Analysis-2012-2022" target="_blank" class="d-block text-center">GitHub Repository</a>
-
-            </div>
 
             <div class="col-lg-8">
               <p class="fst-italic">
@@ -385,28 +426,67 @@
                 </p>
             </div>
 
+            <div class="col-lg-4" id="chat_app">
+              <img src="assets/img/CTaccidental_analysis.png" class="img-fluid" alt="" style="float: right;">
+              <a href="https://github.com/kshreya2k/Accidental_Drug_Related_Deaths_CT_Data-Analysis-2012-2022" target="_blank" class="d-block text-center">GitHub Repository</a>
+
+            </div>
+
           </div>
             
         </div>
+
+        <!------------------------>
+        <div class="container">
+          <div class="row">
+             <h5><b>Heart Stroke Prediction model with R analysis (Coursera Certified)</b></h5>
+           
+ 
+           <div class="col-lg-3">
+             <img src="assets/img/stroke.png" class="img-fluid" alt="" style="float: left;  margin-bottom: 10px;">
+           </div>
+ 
+           <div class="col-lg-8">
+             <p class="fst-italic">
+             <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+             Spearheaded development of a Stroke Prediction Model with R programming and r-libraries (dplyr, tidyr, caret, ggplot, tidyverse etc.) in R-studio.            <br>
+             <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+             Deployed the validated linear regression model under Machine Learning concept for clinical use, enhancing decision-making in healthcare services.            <br>
+             <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+             Visualized data to analyze the primary factors contributing to the phenomenon behind stroke.<br>
+             <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
+             Conducted comprehensive data analysis, preprocessing, and feature selection to achieve 94.62% predictive accuracy.  
+             </p>        
+           </div>
+ 
+          </div>
+
+        </div>
+
+        
+        <!-------------->
+
 
         <div class="container">
           <div class="row">
             <h5><b>IOT Based Multipurpose Unmanned Sea-Surveillance Vehicle for Defense Purpose &#9973;</b></h5>
           </div>
             <div class="row">
-              <div class="col-lg-6">
-                <img src="assets/img/USV.PNG" class="img-fluid" alt="">
-              </div>
-              <div class="col-lg-6">
+              
+              <div class="col-lg-7">
                 <p class="fst-italic">
                 <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
-                This project “Multi-Purpose Unmanned Surface Vehicles for Surveillance and Rescue Operations” using domain of Internet of Things (IoT) is used mainly in Defense and Rescue purpose. 
+                This objective is to explore the domain of Internet of Things (IoT) is used mainly in Defense and Rescue purpose on sea surface. 
                 <br>
                 <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
                 This USV will provide better security and surveillance capabilities to our Sea borders and restrict unauthorized infiltration attempts.It could also be utilized to save lives in case of a natural disaster.
                 <br>
                 <i class="bi bi-chevron-double-right" style="color: #149ddd;"></i>
                   It has an onboard GPS for Location tracking and in case of any anomaly Quick response team can be sent at that location.               </p>
+              </div>
+
+              <div class="col-lg-4">
+                <img src="assets/img/USV.PNG" class="img-fluid" alt="" style="float: right;">
               </div>
             </div>
           
@@ -531,7 +611,6 @@
       URL.revokeObjectURL(href);
     });
   }
-
 
 
 </script>
